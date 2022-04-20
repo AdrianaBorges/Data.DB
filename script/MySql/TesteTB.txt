@@ -1,0 +1,7 @@
+CREATE TABLE `testetb` (
+  `TesteId` varchar(50) NOT NULL,
+  `Titulo` varchar(50) DEFAULT NULL,
+  `Data` date DEFAULT NULL,
+  `DataHora` datetime DEFAULT NULL,
+  PRIMARY KEY (`TesteId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

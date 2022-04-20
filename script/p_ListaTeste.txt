@@ -1,0 +1,12 @@
+USE [master]
+GO
+/****** Object:  StoredProcedure [dbo].[p_ListaTeste]    Script Date: 23/01/2014 21:50:42 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[p_ListaTeste]
+AS
+BEGIN
+       Select * from TesteTB order by TesteId
+END

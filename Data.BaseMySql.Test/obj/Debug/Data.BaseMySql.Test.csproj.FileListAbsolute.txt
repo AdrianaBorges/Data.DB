@@ -1,0 +1,10 @@
+C:\Data\Data.BaseMySql.Test\bin\Debug\Data.BaseMySql.Test.dll.config
+C:\Data\Data.BaseMySql.Test\bin\Debug\Data.BaseMySql.Test.dll
+C:\Data\Data.BaseMySql.Test\bin\Debug\Data.BaseMySql.Test.pdb
+C:\Data\Data.BaseMySql.Test\bin\Debug\Data.BaseMySql.dll
+C:\Data\Data.BaseMySql.Test\bin\Debug\MySql.Data.dll
+C:\Data\Data.BaseMySql.Test\bin\Debug\nunit.framework.dll
+C:\Data\Data.BaseMySql.Test\bin\Debug\Data.BaseMySql.pdb
+C:\Data\Data.BaseMySql.Test\obj\Debug\Data.BaseMySql.Test.csprojResolveAssemblyReference.cache
+C:\Data\Data.BaseMySql.Test\obj\Debug\Data.BaseMySql.Test.dll
+C:\Data\Data.BaseMySql.Test\obj\Debug\Data.BaseMySql.Test.pdb

@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Data.Base</name>
+    </assembly>
+    <members>
+        <member name="M:Data.Base.DB.#ctor">
+            <summary>
+            Instancia o objeto DB.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.#ctor(System.Boolean)">
+            <summary>
+            Instancia o objeto DB e abre a conexão com o banco de dados.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Instancia o objeto DB, abre a conexão com o banco de dados e inicia a transação.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.GetConnectionString">
+            <summary>
+            Obtém a string de conexão do arquivo App.config.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.OpenConnection">
+            <summary>
+            Abre a conexão com o banco de dados.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.CloseConnection">
+            <summary>
+            Fecha a conexão com o banco de dados.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.BeginTransaction">
+            <summary>
+            Iniciar a transação.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.CommitTransaction">
+            <summary>
+            Consolida a transação.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.RollBackTransaction">
+            <summary>
+            Cancela a transação.
+            </summary>
+        </member>
+        <member name="M:Data.Base.DB.GetCommand(System.String)">
+            <summary>
+            Retorna um SqlCommand baseado no texto da query passada pelo parâmetro command.
+            </summary>
+            <param name="command">Query ou nome de algum procedimento armazenado no banco.</param>
+        </member>
+        <member name="M:Data.Base.DB.ExistsValue(Data.Base.IStoredProcedureContext)">
+            <summary>
+            Retorna true se a Stored Procedure passado pelo parâmetro context retornar uma linha.
+            </summary>
+            <param name="context">Classe de contexto que implementa IStoredProcedureContext</param>
+        </member>
+        <member name="M:Data.Base.DB.ExistsValue(Data.Base.ISqlCommandContext)">
+            <summary>
+            Retorna true se o SQL passado pelo parâmetro sql retornar uma linha.
+            </summary>
+            <param name="context">Classe de contexto que implementa ISqlCommandContext</param>
+        </member>
+        <member name="M:Data.Base.DB.ExistsValue(System.String)">
+            <summary>
+            Retorna true se a query passado pelo parâmetro sql retornar uma linha.
+            </summary>
+            <param name="sql">string</param>
+        </member>
+        <member name="M:Data.Base.DB.ExistsValue(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Retorna true se o SqlCommand passado pelo parâmetro sqlCommand retornar uma linha.
+            </summary>
+            <param name="sqlCommand">SqlCommand</param>
+        </member>
+        <member name="M:Data.Base.DB.Execute(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Retorna o número de linhas afetadas pelo SqlCommand passado pelo parâmetro sqlCommand.
+            </summary>
+            <param name="sqlCommand">SqlCommand</param>
+        </member>
+        <member name="M:Data.Base.DB.Execute(Data.Base.IStoredProcedureContext)">
+            <summary>
+            Retorna o número de linhas afetadas pela Stored Procedure passado pelo parâmetro context.
+            </summary>
+            <param name="context">Classe de contexto que implementa IStoredProcedureContext</param>
+        </member>
+        <member name="M:Data.Base.DB.Execute(Data.Base.ISqlCommandContext)">
+            <summary>
+            Retorna o número de linhas afetadas pelo SQL passado pelo parâmetro context.
+            </summary>
+            <param name="context">Classe de contexto que implementa ISqlCommandContext</param>
+        </member>
+        <member name="M:Data.Base.DB.Execute(System.String)">
+            <summary>
+            Retorna o número de linhas afetadas pela query passada por parâmetro.
+            </summary>
+            <param name="sql">Query</param>
+        </member>
+        <member name="M:Data.Base.DB.GetDataReader(Data.Base.IStoredProcedureContext)">
+            <summary>
+            Retorna um SqlDataReader baseado no contexto da Stored Procedure passado pelo parâmetro context.
+            DataReader = Conectado ao banco de dados, a conexão não pode ser fechada.
+            </summary>
+            <param name="context">Classe de contexto que implementa IStoredProcedureContext</param>
+        </member>
+        <member name="M:Data.Base.DB.GetDataReader(Data.Base.ISqlCommandContext)">
+            <summary>
+            Retorna um SqlDataReader baseado no contexto do SQL passado pelo parâmetro context.
+            DataReader = Conectado ao banco de dados, a conexão não pode ser fechada.
+            </summary>
+            <param name="context">Classe de contexto que implementa ISqlCommandContext</param>
+        </member>
+        <member name="M:Data.Base.DB.GetDataReader(System.String)">
+            <summary>
+            Retorna o SqlDataReader baseado no texto da query passada pelo parâmetro sql.
+            DataReader = Conectado ao banco de dados, a conexão não pode ser fechada.
+            </summary>
+            <param name="sql">string</param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.Base.DB.GetDataReader(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Retorna o SqlDataReader baseado SqlCommand passado pelo parâmetro sqlCommand.
+            DataReader = Conectado ao banco de dados, a conexão não pode ser fechada.
+            </summary>
+            <param name="sqlCommand">SqlCommand</param>
+            <returns></returns>
+        </member>
+        <member name="M:Data.Base.DB.GetDataSet(System.String)">
+            <summary>
+            Retorna o DataSet baseado no texto da query passada pelo parâmetro sql.
+            DataSet = Desconectado ao banco de dados, a conexão pode ser fechada.
+            </summary>
+            <param name="sql">Query</param>
+        </member>
+        <member name="M:Data.Base.DB.GetDataTable(System.String)">
+            <summary>
+            Retorna o DataTable baseado no texto da query passada pelo parâmetro sql.
+            DataTable = Desconectado ao banco de dados, a conexão pode ser fechada.
+            </summary>
+            <param name="sql">Query</param>
+        </member>
+        <member name="M:Data.Base.DB.GetDataTable(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Retorna o DataTable baseado no SqlCommand passado pelo parâmetro sqlCommand.
+            DataTable = Desconectado ao banco de dados, a conexão pode ser fechada.
+            </summary>
+            <param name="sqlCommand">SqlCommand</param>
+        </member>
+        <member name="M:Data.Base.DB.GetDataTable(Data.Base.IStoredProcedureContext)">
+            <summary>
+            Retorna um DataTable baseado no contexto da Stored Procedure passado pelo parâmetro context.
+            </summary>
+            <param name="context">Classe de contexto que implementa IStoredProcedureContext</param>
+        </member>
+        <member name="M:Data.Base.DB.GetDataTable(Data.Base.ISqlCommandContext)">
+            <summary>
+            Retorna um DataTable baseado no contexto da Stored Procedure passado pelo parâmetro context.
+            </summary>
+            <param name="context">Classe de contexto que implementa ISqlCommandContext</param>
+        </member>
+        <member name="M:Data.Base.DB.GetValue(Data.Base.IStoredProcedureContext)">
+            <summary>
+            Retorna o valor da primeira coluna da primeira linha do resultado da Stored Procedure passado pelo parâmetro context.
+            </summary>
+            <param name="context">Classe de contexto que implementa IStoredProcedureContext</param>
+        </member>
+        <member name="M:Data.Base.DB.GetValue(Data.Base.ISqlCommandContext)">
+            <summary>
+            Retorna o valor da primeira coluna da primeira linha do resultado do SQL passado pelo parâmetro context.
+            </summary>
+            <param name="context">Classe de contexto que implementa ISqlCommandContext</param>
+        </member>
+        <member name="M:Data.Base.DB.GetValue(System.String)">
+            <summary>
+            Retorna o valor da primeira coluna da primeira linha do resultado da query passada por parâmetro.
+            </summary>
+            <param name="sql">Query</param>
+        </member>
+        <member name="M:Data.Base.DB.GetValue(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Retorna o valor da primeira coluna da primeira linha do resultado do SqlCommand passado por parâmetro.
+            </summary>
+            <param name="sqlCommand">SqlCommand</param>
+        </member>
+        <member name="M:Data.Base.DB.GetResult(Data.Base.IStoredProcedureContext)">
+            <summary>
+            Retorna o valor do resultado da Stored Procedure passado pelo parâmetro context.
+            </summary>
+            <param name="context">Classe de contexto que implementa IStoredProcedureContext</param>
+        </member>
+        <member name="M:Data.Base.DB.Dispose(System.Boolean)">
+            <summary>
+            Libera os recursos alocados pela instância da classe.
+            </summary>
+        </member>
+        <member name="M:Data.Base.ISqlCommandContext.AddParameters(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Inclui os parâmetros do SQL no SqlCommand passado por parâmetro.
+            </summary>
+            <param name="command">SqlCommand</param>
+        </member>
+        <member name="P:Data.Base.ISqlCommandContext.SQL">
+            <summary>
+            Commando SQL.
+            </summary>
+        </member>
+        <member name="M:Data.Base.IStoredProcedureContext.AddParameters(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Inclui os parâmetros da Stored Procedure no SqlCommand passado por parâmetro.
+            </summary>
+            <param name="command">SqlCommand</param>
+        </member>
+        <member name="P:Data.Base.IStoredProcedureContext.NAME">
+            <summary>
+            Nome da Stored Procedure.
+            </summary>
+        </member>
+        <member name="T:Data.Base.WindowsForm">
+            <summary>
+            Classe responsável por carregar e selecionar elementos de interface com base em dados do banco de dados.
+            </summary>
+        </member>
+        <member name="M:Data.Base.WindowsForm.LoadFromDataTable(System.Windows.Forms.ListBox,System.Data.DataTable)">
+            <summary>
+            Carrega o ListBox com base no conteúdo do DataTable passado por parâmetro.
+            </summary>
+            <param name="listBox">ListBox</param>
+            <param name="dataTable">DataTable</param>
+        </member>
+        <member name="M:Data.Base.WindowsForm.LoadFromDataTable(System.Windows.Forms.ComboBox,System.Data.DataTable)">
+            <summary>
+            Carrega o ComboBox com base no conteúdo do DataTable passado por parâmetro.
+            </summary>
+            <param name="comboBox">ComboBox</param>
+            <param name="dataTable">DataTable</param>
+        </member>
+        <member name="M:Data.Base.WindowsForm.LoadFromDataTable(System.Windows.Forms.ToolStripComboBox,System.Data.DataTable)">
+            <summary>
+            Carrega o ComboBox com base no conteúdo do DataTable passado por parâmetro.
+            </summary>
+            <param name="ToolStripComboBox">ToolStripComboBox</param>
+            <param name="dataTable">DataTable</param>
+        </member>
+        <member name="M:Data.Base.WindowsForm.LoadFromDataTable(System.Windows.Forms.ListView,System.Data.DataTable)">
+            <summary>
+            Carrega o ListView com base no conteúdo do DataTable passado por parâmetro.
+            </summary>
+            <param name="listView">ListView</param>
+            <param name="dataTable">DataTable</param>
+        </member>
+        <member name="M:Data.Base.WindowsForm.SelectById(System.Windows.Forms.ListBox,System.String)">
+            <summary>
+            Seleciona um item do ListBox com base no Id passado por parâmetro.
+            </summary>
+            <param name="listBox">ListBox</param>
+            <param name="id">Id do item que será selecionado.</param>
+        </member>
+        <member name="M:Data.Base.WindowsForm.SelectById(System.Windows.Forms.ComboBox,System.String)">
+            <summary>
+            Seleciona um item do ComboBox com base no Id passado por parâmetro.
+            </summary>
+            <param name="comboBox">ComboBox</param>
+            <param name="id">Id do item que será selecionado.</param>
+        </member>
+    </members>
+</doc>

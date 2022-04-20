@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="B0DA0332-42EF-44DD-B624-F19BDFAC73DA" ModuleId="Data.Base" />
+  <Module PersistentId="FD04FE03-D931-4854-8541-84B71A371B7C" ModuleId="Data.Base.Test" />
+  <Module PersistentId="BFEFCEA7-AD3D-4193-BB09-3877EDD6027E" ModuleId="Data.BaseMySql" />
+  <Module PersistentId="07FC08F3-7280-407B-87EA-A15EF87A9478" ModuleId="Data.BaseMySql.Test" />
+</Modules>

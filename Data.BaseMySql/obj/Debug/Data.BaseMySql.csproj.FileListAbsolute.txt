@@ -1,0 +1,5 @@
+C:\Data\Data.BaseMySql\bin\Debug\Data.BaseMySql.dll
+C:\Data\Data.BaseMySql\bin\Debug\Data.BaseMySql.pdb
+C:\Data\Data.BaseMySql\bin\Debug\MySql.Data.dll
+C:\Data\Data.BaseMySql\obj\Debug\Data.BaseMySql.dll
+C:\Data\Data.BaseMySql\obj\Debug\Data.BaseMySql.pdb

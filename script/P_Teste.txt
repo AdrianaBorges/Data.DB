@@ -1,0 +1,19 @@
+ALTER PROCEDURE dbo.p_Teste
+
+AS
+
+BEGIN
+
+       Begin try
+
+             return 24
+
+       End try
+
+       Begin Catch
+
+             Select ERROR_MESSAGE() as ErrorMessage
+
+       End Catch
+
+END

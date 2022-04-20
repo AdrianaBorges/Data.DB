@@ -1,0 +1,18 @@
+USE [master]
+GO
+
+/****** Object:  Table [dbo].[TesteTB]    Script Date: 23/01/2014 21:52:06 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TesteTB](
+	[TesteId] [nvarchar](50) NULL,
+	[Titulo] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+

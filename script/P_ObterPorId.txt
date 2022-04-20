@@ -1,0 +1,14 @@
+USE [master]
+GO
+/****** Object:  StoredProcedure [dbo].[P_ObterPorId]    Script Date: 23/01/2014 21:50:44 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[P_ObterPorId]
+	@Id nvarchar(50)
+	As
+Begin
+
+SELECT TesteId, Titulo From TesteTB Where TesteId = @Id
+END

@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Base", "Data.Base\Data.Base.csproj", "{B0DA0332-42EF-44DD-B624-F19BDFAC73DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Base.Test", "Data.Base.Test\Data.Base.Test.csproj", "{FD04FE03-D931-4854-8541-84B71A371B7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "script", "script", "{573660D6-99F5-456A-8630-FDE825D70E4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{635B2806-8E6A-423F-B39B-A55361C78FA7}"
+	ProjectSection(SolutionItems) = preProject
+		bin\MySql.Data.dll = bin\MySql.Data.dll
+		bin\nunit.framework.dll = bin\nunit.framework.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.BaseMySql", "Data.BaseMySql\Data.BaseMySql.csproj", "{BFEFCEA7-AD3D-4193-BB09-3877EDD6027E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.BaseMySql.Test", "Data.BaseMySql.Test\Data.BaseMySql.Test.csproj", "{07FC08F3-7280-407B-87EA-A15EF87A9478}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlServer", "SqlServer", "{E2BB6F86-B03B-4809-92C0-3A719F04CA84}"
+	ProjectSection(SolutionItems) = preProject
+		script\SqlServer\p_ListaTeste.txt = script\SqlServer\p_ListaTeste.txt
+		script\SqlServer\P_ObterPorId.txt = script\SqlServer\P_ObterPorId.txt
+		script\SqlServer\P_Teste.txt = script\SqlServer\P_Teste.txt
+		script\SqlServer\TesteTB.txt = script\SqlServer\TesteTB.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MySql", "MySql", "{C8D449AA-D614-49DE-9348-4D532547F17D}"
+	ProjectSection(SolutionItems) = preProject
+		script\MySql\TesteTB.txt = script\MySql\TesteTB.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0DA0332-42EF-44DD-B624-F19BDFAC73DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0DA0332-42EF-44DD-B624-F19BDFAC73DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0DA0332-42EF-44DD-B624-F19BDFAC73DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0DA0332-42EF-44DD-B624-F19BDFAC73DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD04FE03-D931-4854-8541-84B71A371B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD04FE03-D931-4854-8541-84B71A371B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD04FE03-D931-4854-8541-84B71A371B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD04FE03-D931-4854-8541-84B71A371B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFEFCEA7-AD3D-4193-BB09-3877EDD6027E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEFCEA7-AD3D-4193-BB09-3877EDD6027E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEFCEA7-AD3D-4193-BB09-3877EDD6027E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEFCEA7-AD3D-4193-BB09-3877EDD6027E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07FC08F3-7280-407B-87EA-A15EF87A9478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07FC08F3-7280-407B-87EA-A15EF87A9478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07FC08F3-7280-407B-87EA-A15EF87A9478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07FC08F3-7280-407B-87EA-A15EF87A9478}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2BB6F86-B03B-4809-92C0-3A719F04CA84} = {573660D6-99F5-456A-8630-FDE825D70E4D}
+		{C8D449AA-D614-49DE-9348-4D532547F17D} = {573660D6-99F5-456A-8630-FDE825D70E4D}
+	EndGlobalSection
+EndGlobal
